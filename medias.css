@@ -1,0 +1,80 @@
+@media (min-width: 770px) {
+  .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 770px) {
+  .hamburger {
+    display: block;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    z-index: 10;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    min-height: 5rem;
+    z-index: 11;
+  }
+
+  .navbar.active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #36bad4;
+    z-index: 10;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar .navul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 4rem;
+  }
+
+  .navbar.active .menuli {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+  }
+
+  .navbar.active .calltoaction {
+    margin-top: 2rem;
+  }
+
+  .socialmediaicons {
+    margin-right: 0;
+  }
+
+  .email {
+    margin: 0;
+    margin-right: 0.5rem;
+  }
+
+  svg {
+    margin: 0 0.1rem;
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar.active .menuli {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+}
